@@ -1,0 +1,11 @@
+div.login{
+    background-image: url('https://cdn.wallpapersafari.com/65/70/LiBs3c.jpg');
+    height:92.6vh;
+    color: white
+}
+
+div.home{
+    background-image: url('https://images.wallpaperscraft.com/image/legs_sneakers_shoes_140745_1280x720.jpg');
+    height: 90vh;
+    background-size: cover;
+}

@@ -1,0 +1,72 @@
+{
+  "users": [
+    {
+      "username": "jsdjcsgjsg",
+      "email": "hdghsghdfg",
+      "pswd": "jgwhdgfjwgfkw",
+      "id": 1
+    },
+    {
+      "username": "yogi",
+      "email": "yogikrisnawan@gmail.com",
+      "pswd": "Sugiharto",
+      "id": 2
+    },
+    {
+      "username": "Budi",
+      "email": "Budi@gmail.com",
+      "pswd": "123456",
+      "id": 3
+    },
+    {
+      "username": "Anton",
+      "email": "anton@gmail.com",
+      "pswd": "123456789",
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "kaos",
+      "desc": "test",
+      "price": 5000000,
+      "src": "https://www.pngfind.com/pngs/m/162-1621689_cloud9-lcs-jersey-cloud-9-csgo-jersey-hd.png",
+      "Price": 135000,
+      "Description": "test",
+      "description": "tst",
+      "image": "test"
+    },
+    {
+      "id": 2,
+      "name": "Adidas",
+      "desc": "Lorem ipsum dolor sit amet",
+      "price": 1000,
+      "src": "https://www.pngfind.com/pngs/m/162-1621689_cloud9-lcs-jersey-cloud-9-csgo-jersey-hd.png",
+      "Price": "2000000",
+      "Description": "Lorem ipsum dolor sit amet",
+      "description": "Lorem ipsum dolor sit amet"
+    },
+    {
+      "id": 3,
+      "name": "Sandals Swelow",
+      "desc": "Lorem ipsum dolor sit amet",
+      "price": 235000,
+      "src": "https://www.pngfind.com/pngs/m/162-1621689_cloud9-lcs-jersey-cloud-9-csgo-jersey-hd.png"
+    },
+    {
+      "id": 4,
+      "name": "T-Shirt O Neck",
+      "desc": "Lorem ipsum dolor sit amet",
+      "price": 178000,
+      "src": "https://www.pngfind.com/pngs/m/162-1621689_cloud9-lcs-jersey-cloud-9-csgo-jersey-hd.png"
+    },
+    {
+      "id": 5,
+      "name": "T-Shirt V Neck",
+      "desc": "Lorem ipsum dolor sit amet",
+      "price": 179000,
+      "src": "https://www.pngfind.com/pngs/m/162-1621689_cloud9-lcs-jersey-cloud-9-csgo-jersey-hd.png"
+    }
+  ]
+}
