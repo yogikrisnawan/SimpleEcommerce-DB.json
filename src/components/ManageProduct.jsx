@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import axios from "axios";
+import axios from "../config/axios";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import Swal from "sweetalert2"
 
 class ManageProduct extends Component {
   state = {
@@ -66,7 +67,7 @@ class ManageProduct extends Component {
       : this.state.editproduct.Image;
 
     axios
-      .patch(`http://localhost:2020/products/${this.state.editproduct.id}`, {
+      .patch(`/products/${this.state.editproduct.id}`, {
         name,
         desc: description,
         price: price,
@@ -79,14 +80,43 @@ class ManageProduct extends Component {
 
   // Delete Data
   deleteproduct = id => {
-    axios.delete(`http://localhost:2020/products/${id}`).then(res => {
-      this.getData();
-    });
-  };
+    // axios.delete(`http://localhost:2020/products/${id}`).then(res => {
+    //   this.getData();
+    // });
+    Swal.fire({
+      title: 'Yakin Mau di Hapus?',
+      text: 'nanti ga bisa balik lho..',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonText: 'APUSS AEEEH',
+      cancelButtonText: 'Yauda GA JADIII!!'
+    }).then((result) => {
+      if (result.value) {
+        axios.delete(`/products/${id}`).then(res => {
+          this.getData();
+          Swal.fire(
+            'HAPUSS',
+            'HILANGG KANNN...',
+            'success'
+          )
+        })
+
+        
+      // For more information about handling dismissals please visit
+      // https://sweetalert2.github.io/#handling-dismissals
+      } else {
+        Swal.fire(
+          'Oke kalo itu mau Lo..',
+          'Kita balikin file Lo..',
+          'error'
+        )
+      }
+    })
+  }
 
   //Edit Data
   editproduct = id => {
-    axios.get(`http://localhost:2020/products/${id}`).then(res => {
+    axios.get(`/products/${id}`).then(res => {
       this.setState({ editproduct: res.data, modal: true });
     });
   };
@@ -96,7 +126,7 @@ class ManageProduct extends Component {
   };
   //   Ambil Data
   getData = () => {
-    axios.get("http://localhost:2020/products").then(res => {
+    axios.get("/products").then(res => {
       this.setState({ products: res.data });
     });
   };
@@ -110,7 +140,7 @@ class ManageProduct extends Component {
 
     // Taruh data ke database "db.json"
     axios
-      .post("http://localhost:2020/products", {
+      .post("/products", {
         name: name_source,
         desc: desc_source,
         price: price_source,

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import axios from "axios";
+import axios from "../config/axios";
 
 class Register extends Component {
   onButtonClick = () => {
@@ -9,8 +9,8 @@ class Register extends Component {
     let pswd = this.password.value;
     // SImpan di Json
     // GET, POST, PUT, PATCH
-    let linkPost = "http://localhost:2020/users";
-    let linkGet = "http://localhost:2020/users";
+    let linkPost = "/users";
+    let linkGet = "/users";
     let data = { username, email, pswd };
     // Check data
     axios.get(linkGet).then(res => {

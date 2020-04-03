@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import axios from 'axios'
+import axios from '../config/axios'
 import {Link} from "react-router-dom"
 
 
@@ -12,7 +12,10 @@ class Home extends Component {
     this.getProduct()
   }
   getProduct = () =>{
-    axios.get('http://localhost:2020/products').then((res)=>{
+    axios.get('/products').then((res)=>{
+      this.name.value=""
+      this.min.value=""
+      this.max.value=""
       this.setState({products:res.data})
     })
   }
@@ -42,32 +45,42 @@ class Home extends Component {
   
   onBtnSearch = ()=>{
 
-    axios.get('http://localhost:2020/products').then((res)=>{
+    axios.get('/products').then((res)=>{
       
      
     let keyword = this.name.value
-    let minprice  = this.min.value
-    let maxprice = this.max.value
+    let minprice = parseInt(this.min.value)
+    let maxprice = parseInt(this.max.value)
     let filterResult = []
 
     if(isNaN(minprice) && isNaN(maxprice)){
       filterResult = res.data.filter ((data)=>{
       return(
-        data.nama.toLocaleLowerCase().includes(keyword.toLocaleLowerCase())
+        data.name.toLowerCase().includes(keyword.toLowerCase())
         )
     })
+
   }else if (isNaN(maxprice)){
     filterResult=res.data.filter ((data) => {
       return (
-        data.nama.toLocaleLowerCase().includes(keyword.toLocaleLowerCase())&&
+        data.name.toLowerCase().includes(keyword.toLowerCase())&&
         data.price >= minprice
       )
     })
+
   }else if (isNaN(minprice)){
     filterResult=res.data.filter((data)=>{
       return(
-        data.nama.toLocaleLowerCase().includes(keyword.toLocaleLowerCase())&&
+        data.nama.toLowerCase().includes(keyword.toLowerCase())&&
         data.price <= maxprice
+      )
+    })
+  }else {
+    filterResult=res.data.filter((data)=>{
+      return(
+        data.name.toLowerCase().includes(keyword.toLowerCase())&&
+        data.price>=minprice&&
+        data.price<=maxprice
       )
     })
   }
@@ -75,6 +88,8 @@ class Home extends Component {
     })
 
   }
+
+
   
   render() {
     return (
@@ -98,7 +113,7 @@ class Home extends Component {
                   <input ref={(input)=>{this.max=input}} className="form-control " type="text" placeholder="Max"/>
 
                   <button onClick={this.onBtnSearch} className="btn btn-block btn-outline-primary mt-5">Search</button>
-                  <button className="btn btn-block btn-outline-danger">Reset</button>
+                  <button onClick={this.getProduct} className="btn btn-block btn-outline-danger">Reset</button>
                   
                 </div>  
 

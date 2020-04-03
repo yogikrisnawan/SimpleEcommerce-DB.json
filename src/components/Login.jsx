@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import axios from "axios";
+import axios from "../config/axios";
 import { connect } from "react-redux";
 
 
@@ -13,7 +13,7 @@ class Login extends Component {
     let _pswd = this.pswd.value;
 
     // get data with parameters
-    let link = "http://localhost:2020/users";
+    let link = "/users";
     let data = { username: _username, pswd: _pswd };
 
     axios.get(link, { params: data }).then(res => {

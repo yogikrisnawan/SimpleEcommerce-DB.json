@@ -28,45 +28,47 @@
   "products": [
     {
       "id": 1,
-      "name": "kaos",
-      "desc": "test",
-      "price": 5000000,
-      "src": "https://www.pngfind.com/pngs/m/162-1621689_cloud9-lcs-jersey-cloud-9-csgo-jersey-hd.png",
-      "Price": 135000,
-      "Description": "test",
-      "description": "tst",
-      "image": "test"
+      "name": "Hoodie",
+      "desc": "Lorem ipsum dolor sit amet",
+      "price": 1000,
+      "src": "https://urhokas.com/wp-content/uploads/2019/08/Flash-reflective-jogger-streetwear-pants02.jpg",
+      "Price": "2000000"
     },
     {
       "id": 2,
       "name": "Adidas",
       "desc": "Lorem ipsum dolor sit amet",
       "price": 1000,
-      "src": "https://www.pngfind.com/pngs/m/162-1621689_cloud9-lcs-jersey-cloud-9-csgo-jersey-hd.png",
-      "Price": "2000000",
-      "Description": "Lorem ipsum dolor sit amet",
-      "description": "Lorem ipsum dolor sit amet"
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwO2iAbovlGNQ0lA9AopOpCBA0oYL84JsTGz2Nk7eQnFe_NQUM&s",
+      "Price": "2000000"
     },
     {
       "id": 3,
       "name": "Sandals Swelow",
       "desc": "Lorem ipsum dolor sit amet",
       "price": 235000,
-      "src": "https://www.pngfind.com/pngs/m/162-1621689_cloud9-lcs-jersey-cloud-9-csgo-jersey-hd.png"
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlaazsr3WKuTtLuyGikuD2GL_eHuPgENT49Ee_UInKjZmyvuJe4Q&s"
     },
     {
       "id": 4,
       "name": "T-Shirt O Neck",
       "desc": "Lorem ipsum dolor sit amet",
       "price": 178000,
-      "src": "https://www.pngfind.com/pngs/m/162-1621689_cloud9-lcs-jersey-cloud-9-csgo-jersey-hd.png"
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5RdW3jYGb5YoceyZbD1bMGCHdIHJAglh4rwqYNbCkDlZEk9h1WQ&s"
     },
     {
       "id": 5,
       "name": "T-Shirt V Neck",
       "desc": "Lorem ipsum dolor sit amet",
       "price": 179000,
-      "src": "https://www.pngfind.com/pngs/m/162-1621689_cloud9-lcs-jersey-cloud-9-csgo-jersey-hd.png"
+      "src": "https://powerdaysale.com/wp-content/uploads/2020/01/Double-Breasted-Elegant-Streetwear-Corduroy-Blazer-1.jpg"
+    },
+    {
+      "name": "Mbak tukang gorengan",
+      "desc": "Jualan gorengan ",
+      "price": 10000000,
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4100I0fXWNsXvqwR2iwEtX0_o0ubtnT5YZZ4O2CZ1EqF5s6V-tg&s",
+      "id": 6
     }
   ]
 }

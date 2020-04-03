@@ -1,10 +1,10 @@
 import React,{Component} from "react"
-import Axios from "axios"
+import Axios from "../config/axios"
 
 export default class DetailProduct extends Component{
 
     componentDidMount(){
-        Axios.get (`http://localhost:2020/products/${this.props.match.params.idPrdct}}`)
+        Axios.get (`/products/${this.props.match.params.idPrdct}}`)
     }
 
     render(){
