@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from '../config/axios'
-import {Link} from "react-router-dom"
+// import {Link} from "react-router-dom"
+import ProductItem from "./ProductItem"
 
 
 class Home extends Component {
@@ -20,28 +21,31 @@ class Home extends Component {
     })
   }
   renderProducts = ()=>{
+    
     return this.state.products.map((product)=>{
       product.price=product.price.toLocaleString("in")
       return(
-        <div key={product.id}className="card  col-lg-5 col-xl-3 mx-auto mx-xl-4 my-3">
-          <img className="card-img-top"src={product.src} alt=""/>
-          <div className= "card-body">
-            <h5 className="card-title">{product.name}</h5>
-            <p className= "card-text" >{product.desc}</p>
-            <p className="card-text">Rp.{product.price}</p>
-            <input className="form-control" type="text" placeholder="Jumlah QTY"></input>
-            <Link to={`/detailproduct/${product.id}`}>
-              <button className="btn btn-secondary btn-light btn-block my-2">
-                DETAIL
-              </button>
-            </Link>
-            <button className="btn btn-primary btn-dark btn-block my-2">ADD TO CART</button>
-          </div>
-        </div>
+    //     <div key={product.id}className="card  col-lg-5 col-xl-3 mx-auto mx-xl-4 my-3">
+    //       <img className="card-img-top"src={product.src} alt=""/>
+    //       <div className= "card-body">
+    //         <h5 className="card-title">{product.name}</h5>
+    //         <p className= "card-text" >{product.desc}</p>
+    //         <p className="card-text">Rp.{product.price}</p>
+    //         <input className="form-control" type="text" placeholder="Jumlah QTY"></input>
+    //         <Link to={`/detailproduct/${product.id}`}>
+    //           <button className="btn btn-secondary btn-light btn-block my-2">
+    //             DETAIL
+    //           </button>
+    //         </Link>
+    //         <button className="btn btn-primary btn-dark btn-block my-2">ADD TO CART</button>
+    //       </div>
+    //     </div>
+    <ProductItem product={product}/>
+      
+      )}
       )
-    })
-
   }
+  
   
   onBtnSearch = ()=>{
 

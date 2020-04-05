@@ -8,6 +8,7 @@ import Register from "./Register";
 import Login from "./Login";
 import ManageProduct from "./ManageProduct";
 import DetailProduct from "./DetailProduct"
+import Cart from "./Cart"
 
 // Keeplogin
 import {onLoginUser}from'../actions/index'
@@ -34,6 +35,7 @@ componentDidMount(){
           <Route path="/login" component={Login} />
           <Route path="/manageproduct" component={ManageProduct} />
           <Route path="/detailproduct/:id" component={DetailProduct}/>
+          <Route path="/cart" component={Cart}/>
         </div>
       </BrowserRouter>
     );

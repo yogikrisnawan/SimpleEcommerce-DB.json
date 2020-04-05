@@ -57,7 +57,7 @@ class Header extends Component {
               <DropdownItem>Manage Products</DropdownItem>
             </NavLink>
 
-            <NavLink tag={Link} to="/">
+            <NavLink tag={Link} to="/cart">
               <DropdownItem>Cart</DropdownItem>
             </NavLink>
 
