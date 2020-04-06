@@ -30,7 +30,7 @@
       "id": 1,
       "name": "Hoodie",
       "desc": "Lorem ipsum dolor sit amet",
-      "price": 1000,
+      "price": 200000,
       "src": "https://urhokas.com/wp-content/uploads/2019/08/Flash-reflective-jogger-streetwear-pants02.jpg",
       "Price": "2000000"
     },
@@ -38,7 +38,7 @@
       "id": 2,
       "name": "Adidas",
       "desc": "Lorem ipsum dolor sit amet",
-      "price": 1000,
+      "price": 300000,
       "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwO2iAbovlGNQ0lA9AopOpCBA0oYL84JsTGz2Nk7eQnFe_NQUM&s",
       "Price": "2000000"
     },
@@ -64,11 +64,53 @@
       "src": "https://powerdaysale.com/wp-content/uploads/2020/01/Double-Breasted-Elegant-Streetwear-Corduroy-Blazer-1.jpg"
     },
     {
-      "name": "Mbak tukang gorengan",
+      "name": "Baju Panjang",
       "desc": "Jualan gorengan ",
       "price": 10000000,
       "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4100I0fXWNsXvqwR2iwEtX0_o0ubtnT5YZZ4O2CZ1EqF5s6V-tg&s",
       "id": 6
+    }
+  ],
+  "carts": [
+    {
+      "name": "Hoodie",
+      "desc": "Lorem ipsum dolor sit amet",
+      "price": 200000,
+      "src": "https://urhokas.com/wp-content/uploads/2019/08/Flash-reflective-jogger-streetwear-pants02.jpg",
+      "qty": 3,
+      "id": 1
+    },
+    {
+      "name": "Adidas",
+      "desc": "Lorem ipsum dolor sit amet",
+      "price": 300000,
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwO2iAbovlGNQ0lA9AopOpCBA0oYL84JsTGz2Nk7eQnFe_NQUM&s",
+      "qty": 5,
+      "id": 2
+    },
+    {
+      "name": "T-Shirt O Neck",
+      "desc": "Lorem ipsum dolor sit amet",
+      "price": 178000,
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5RdW3jYGb5YoceyZbD1bMGCHdIHJAglh4rwqYNbCkDlZEk9h1WQ&s",
+      "qty": 6,
+      "id": 3
+    },
+    {
+      "name": "Hoodie",
+      "desc": "Lorem ipsum dolor sit amet",
+      "price": 200000,
+      "src": "https://urhokas.com/wp-content/uploads/2019/08/Flash-reflective-jogger-streetwear-pants02.jpg",
+      "qty": null,
+      "id": 4
+    },
+    {
+      "name": "Hoodie",
+      "desc": "Lorem ipsum dolor sit amet",
+      "price": 200000,
+      "src": "https://urhokas.com/wp-content/uploads/2019/08/Flash-reflective-jogger-streetwear-pants02.jpg",
+      "qty": null,
+      "id": 5
     }
   ]
 }

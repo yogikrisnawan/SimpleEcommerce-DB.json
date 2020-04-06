@@ -10,6 +10,7 @@ import ManageProduct from "./ManageProduct";
 import DetailProduct from "./DetailProduct"
 import Cart from "./Cart"
 
+
 // Keeplogin
 import {onLoginUser}from'../actions/index'
 import {connect} from 'react-redux'
@@ -36,6 +37,8 @@ componentDidMount(){
           <Route path="/manageproduct" component={ManageProduct} />
           <Route path="/detailproduct/:id" component={DetailProduct}/>
           <Route path="/cart" component={Cart}/>
+          
+
         </div>
       </BrowserRouter>
     );

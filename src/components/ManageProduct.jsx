@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import axios from "../config/axios";
+import {Redirect,Link}from 'react-router-dom'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import {connect}from 'react-redux'
+
 import Swal from "sweetalert2"
 
 class ManageProduct extends Component {
@@ -152,6 +155,7 @@ class ManageProduct extends Component {
   };
 
   render() {
+    if(this.props.username){
     return (
       <div className="container">
         {/* List Product */}
@@ -172,7 +176,7 @@ class ManageProduct extends Component {
 
         {/* Input Procduct */}
         <h1 className="text-center display-4">INPUT PRODUCT</h1>
-        <table class="tabke table-hover text-center mb-5">
+        <table class="table table-hover text-center mb-5">
           <thead>
             <tr>
               <td scope="col">
@@ -278,8 +282,16 @@ class ManageProduct extends Component {
           </ModalFooter>
         </Modal>
       </div>
-    );
+    )
+     }else{
+    return <Redirect to="/"/>
+    };
+}
+}
+let mapStateToProps=(state)=>{
+  return{
+    username : state.auth.username
   }
 }
 
-export default ManageProduct;
+export default connect (mapStateToProps)(ManageProduct)

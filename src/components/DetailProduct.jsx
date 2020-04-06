@@ -13,6 +13,7 @@ export default class DetailProduct extends Component{
             this.setState({product:res.data})
         })
     }
+    
 
     render(){
         return(

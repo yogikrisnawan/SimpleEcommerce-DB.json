@@ -23,7 +23,7 @@ class Home extends Component {
   renderProducts = ()=>{
     
     return this.state.products.map((product)=>{
-      product.price=product.price.toLocaleString("in")
+      // product.price=product.price.toLocaleString("in")
       return(
     //     <div key={product.id}className="card  col-lg-5 col-xl-3 mx-auto mx-xl-4 my-3">
     //       <img className="card-img-top"src={product.src} alt=""/>

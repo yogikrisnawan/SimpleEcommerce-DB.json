@@ -76,7 +76,7 @@ class Header extends Component {
       <div>
         <Navbar color="light" light expand="md">
           <NavbarBrand tag={Link} to="/">
-            reactstrap
+           <div className="bold alert-heading">Palugada</div>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
