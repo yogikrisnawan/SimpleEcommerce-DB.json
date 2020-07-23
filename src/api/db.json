@@ -23,6 +23,12 @@
       "email": "anton@gmail.com",
       "pswd": "123456789",
       "id": 4
+    },
+    {
+      "username": "Lia",
+      "email": "celcilia@yahoo.com",
+      "pswd": "123",
+      "id": 5
     }
   ],
   "products": [

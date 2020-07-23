@@ -63,7 +63,7 @@ class Header extends Component {
 
             <DropdownItem divider />
               <NavLink tag={Link} to="/">
-                <DropdownItem onClick={this.props.onLogoutUser}>Logout</DropdownItem>
+                <DropdownItem onClick={this.props.onLogoutUser}>Logout Sini aja</DropdownItem>
               </NavLink>
           </DropdownMenu>
         </UncontrolledDropdown>
